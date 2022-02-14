@@ -1,0 +1,32 @@
+@import 'config';
+
+.skills-section{
+  h2{
+    margin-bottom: 20px;
+  }
+  border: 1px solid $secondary-color;
+  border-radius: 5px;
+  margin: 10px 10px;
+  overflow: hidden;
+  padding:20px;
+  p{
+    overflow: hidden;
+    margin-bottom: 10px;
+  }
+}
+
+  /*Media queries*/
+/* Mobile Styles */
+@media only screen and (max-width: 575px) {
+  
+}
+
+/* Tablet Styles */
+@media only screen and (min-width: 576px) {
+  
+}
+
+/* Desktop Styles */
+@media only screen and (min-width: 961px) {
+  
+}

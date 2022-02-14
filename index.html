@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang='en'>
+  <head>
+    <meta charset='UTF-8'/>
+    <meta name='viewport' content='width=device-width, initial-scale=1.0, maximum-scale=1.0'/>
+    <title>Stefano Chiabrando</title>
+    <link rel="icon" type="image/x-icon" href="/assets/img/favicon.ico">
+    <link href='/assets/css/style.min.css' rel='stylesheet'/>
+    <link href='/assets/css/home.min.css' rel='stylesheet'/>
+  </head>
+  <body>
+    <header class='my-header'>
+      <nav>
+        <input id='menu-checkbox' type='checkbox'/>
+        <label class='menu-btn' for='menu-checkbox'><svg><use xlink:href="/assets/img/icons.svg#bars" /></svg></label>
+        <div class='myname'>Stefano Chiabrando</div>
+        <ul class='menu'>
+          <li><a href='/'><svg><use xlink:href="/assets/img/icons.svg#home" /></svg><div>Home</div></a></li>
+          <li><a href='/about/'><svg><use xlink:href="/assets/img/icons.svg#user" /></svg><div>About</div></a></li>
+          <li><a href='/skills/'><svg><use xlink:href="/assets/img/icons.svg#skills" /></svg><div>Skills</div></a></li>
+          <li><a href='/portfolio/'><svg><use xlink:href="/assets/img/icons.svg#briefcase" /></svg><div>Portfolio</div></a></li>
+          <li><a href='/contact/'><svg><use xlink:href="/assets/img/icons.svg#paper-plane" /></svg><div>Contact</div></a></li>
+        </ul>
+      </nav>
+    </header>
+    <div class='page'>
+      <div class='content-align'>
+        <div class='content-box'>
+          <div class='foto-header'>
+            <img src="/assets/img/foto-home-c.png" alt="">
+            <div><h1>Hello, I'm</h1><h1 id="carousel-words">Stefano Chiabrando</h1><a href="/contact/" class="button-hire">Hire me</a></div>
+          </div>
+          <div class='content-text'>
+            <h1>Stefano Chiabrando</h1>
+            <h2>Electric Engineer</h2>
+            <h2>Web Developer</h2>
+          </div>
+        </div>
+      </div> 
+      <div class='foto'>
+        <img src="/assets/img/foto-home-2.png" alt="">
+      </div>
+    </div>
+    <footer>
+      <div>&copy; STEFANO CHIABRANDO 2022</div>
+      <div>
+        <p>Follow me: </p>
+        <a class="social facebook" href="https://www.facebook.com/profile.php?id=100069913626100" target="_blank"><svg><use xlink:href="/assets/img/icons.svg#facebook" /></svg></a>
+        <a class="social youtube" href="https://www.youtube.com/channel/UCpTh04i44v7Hc0kL-mOaasA" target="_blank"><svg><use xlink:href="/assets/img/icons.svg#youtube" /></svg></a>
+        <a class="social linkedin" href="https://www.linkedin.com/in/stefano-chiabrando/" target="_blank"><svg><use xlink:href="/assets/img/icons.svg#linkedin" /></svg></a>
+        <a class="social github" href="https://github.com/dando90" target="_blank"><svg><use xlink:href="/assets/img/icons.svg#github" /></svg></a>
+      </div>
+    </footer>
+  </body>
+</html>
+<script>
+  /** carousel words**/
+let words = ['an Electric Engineer','a Web Developer','a Dreamer', 'a Problem Solver', 'the Leader of Myself'];
+let counter = 0;
+let word =document.getElementById("carousel-words");
+setInterval(update_carousel_words, 1500);
+function update_carousel_words(){
+    word.innerHTML = words[counter];
+    counter++;
+    if(counter >= words.length){
+        counter=0;
+    }
+}
+</script>

@@ -1,0 +1,45 @@
+@import 'config';
+
+.about-section{
+  h2{
+    margin-bottom: 20px;
+  }
+  border: 1px solid $secondary-color;
+  border-radius: 5px;
+  margin: 10px 10px;
+  overflow: hidden;
+  padding:20px;
+  img{
+    display:block;
+    width: 120px;
+    background-color: $primary-color;
+    border-radius: 50%;
+    float:left;
+    margin-right: 20px;
+  }
+  p{
+    overflow: hidden;
+    margin-bottom: 10px;
+  }
+}
+
+  /*Media queries*/
+/* Mobile Styles */
+@media only screen and (max-width: 575px) {
+  
+}
+
+/* Tablet Styles */
+@media only screen and (min-width: 576px) {
+  .about-section{
+    img{
+      width: 150px;
+      margin-right: 50px;
+    }
+  }
+}
+
+/* Desktop Styles */
+@media only screen and (min-width: 961px) {
+  
+}

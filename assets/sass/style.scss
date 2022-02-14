@@ -1,0 +1,305 @@
+@import 'config';
+
+/*Definizione font*/
+@font-face {
+  font-family: 'Roboto';
+  src: url('/assets/font/Roboto-Light-webfont.woff') format('woff');
+  font-style: normal;
+  font-weight: 300;
+}
+@font-face {
+  font-family: 'Roboto';
+  src: url('/assets/font/Roboto-LightItalic-webfont.woff') format('woff');
+  font-style: italic;
+  font-weight: 300;
+}
+@font-face {
+  font-family: 'Roboto';
+  src: url('/assets/font/Roboto-Bold-webfont.woff') format('woff');
+  font-style: normal;
+  font-weight: 700;
+}
+
+/*Reset generici*/
+* {
+    margin: 0;
+    padding: 0;
+  }
+  *, *::before, *::after {
+    box-sizing: border-box;
+  }
+
+/*Stile pagine */
+body{
+  font-family: 'Roboto', sans-serif;
+  background-color: $secondary-color;
+  background-image: url("/assets/img/pattern-background.png");
+  background-repeat: repeat;
+}
+.page {
+  display:flex;
+  margin-top: 60px;
+}
+.content-align{
+  display:flex;
+  justify-content: center;
+  flex:1;
+}
+.content-box{
+  flex:1;
+  max-width: 660px;
+}
+.foto{
+  flex: initial;
+  width:200px;
+  display: none;
+}
+.foto-header{
+  display:flex;
+  img{
+    width:200px;
+  }
+}
+.content-text{
+  background-color: lighten($color: $primary-color, $amount: 40);
+  border-radius: 5px;
+  padding:20px;
+}
+ /*Footer*/
+ footer{
+  width: 100%;
+  max-width: 960px;
+  margin: 0 auto;
+  display:flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-top:20px;
+  background-color: $primary-color;
+  font-weight: bold;
+  padding: 10px 20px;
+  border-radius: 5px;
+  div{
+    display:flex;
+    align-items: center;
+    &:first-of-type{
+      margin-bottom:10px;
+    }
+    svg{
+      width: 1.5em;
+      height: 1.5em;
+      margin-left:10px;
+    }
+  }
+}
+
+/* Icone social */
+.social{
+  color: grey;
+}
+.facebook:hover{
+  color: #3b5998;
+}
+.youtube:hover{
+  color: #c4302b;
+}
+.linkedin:hover{
+  color: #0e76a8;
+}
+.github:hover{
+  color: #211F1F;
+}
+
+/*Menu navigazione*/
+#menu-checkbox {
+    display: none;
+  }
+.my-header{
+  position: fixed;
+  z-index:10;
+  top: 0px;
+  width: 100%;
+  background-color: lighten($color: $primary-color, $amount: 20);
+  nav{
+    display:flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+  }
+}
+
+.myname{
+  width: auto;
+  flex: initial;
+  font-size: 2em;
+  font-weight: bold;
+  color: darken($color: $secondary-color, $amount:20);
+  padding: .1em .5em;
+  text-transform: uppercase;
+    &:hover{
+    transition: .2s;
+    text-shadow: 2px 2px 5px gray;
+  }
+}
+.menu {
+  display: none;
+  width: 100%;
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  flex-direction: column;
+  li a {
+    display:flex;
+    flex-direction: row;
+    align-items: center;
+    text-decoration: none;
+    background-color: $primary-color;
+    color: darken($color: $secondary-color, $amount:20);
+    padding-left: 1em;
+    div{
+      padding: 1em;
+      font-weight: bold;
+    }
+    &:hover{
+      background-color: lighten($color: $primary-color, $amount: 20);
+    }
+   }
+  svg{
+    width: 2em;
+    height: 2em;
+  }
+ }
+  .menu-btn{
+    svg{
+      width: 2em;
+      height: 2em;
+      transition: transform .2s;
+    }
+    padding-left:1em;
+    color: darken($color: $secondary-color, $amount:20);
+    &:hover{
+      cursor: pointer;
+    }
+  }
+  #menu-checkbox:checked ~ .menu {
+    display: flex;
+  }
+  #menu-checkbox:checked ~ .menu-btn svg{
+    transform: rotate(90deg);
+  }
+
+/*Media queries*/
+/* Mobile Styles */
+@media only screen and (max-width: 575px) {
+  
+}
+
+/* Tablet Styles */
+@media only screen and (min-width: 576px) {
+  .page{
+    margin-top: 110px;
+  }
+  .my-header{
+    nav{
+      justify-content: center;
+    }
+  }
+  footer{
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    div:first-of-type{
+      margin-bottom: 0;
+    }
+  }
+  
+  .menu {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    background-color: $primary-color;
+    li a {
+      padding-left: .5em;
+      &:hover{
+        transition: .2s;
+        border-radius:5px;
+      }
+      div{
+        padding-left: .5em;
+      }
+    }
+  }
+  .menu-btn{
+    display: none;
+  }
+}
+
+/* Desktop Styles */
+@media only screen and (min-width: 961px) {
+  .foto{
+    display:block;
+  }
+  .content-box{
+    flex:1;
+    max-width: 760px;
+  }
+  
+  /*menu*/
+  .my-header{
+    nav{
+      justify-content: flex-start;
+    }
+  }
+  .myname{
+    margin-left:50px;
+  }
+  .menu {
+    position: fixed;
+    width:auto;
+    top: 60px;
+    left:10px;
+    flex-direction: column;
+    background-color: transparent;
+    svg{
+      width: 3em;
+      height: 3em;
+    }
+    div{
+      display:none;
+    }
+    li a {
+      border-radius: 5px;
+      margin-bottom: .5em;
+      margin-right: .5em;
+      margin-left: .2em;
+      padding: .5em;
+    }
+    li a:hover{
+      transition: border-radius .2s;
+      border-radius:50%;
+    }
+    li a:hover div {
+      display: block;
+      position: absolute;
+      left: 90px;
+      background-color: lighten($color: $primary-color, $amount: 20);
+      border-radius: 0px 5px 5px 0px;
+    }
+    li a:hover div:before{
+      content: "";
+      position: absolute;
+      right: 100%;
+      top: 15px;
+      width: 0;
+      height: 0;
+      border-top: 13px solid transparent;
+      border-right: 26px solid lighten($color: $primary-color, $amount: 20);
+      border-bottom: 13px solid transparent;
+    }
+  }
+  
+  .page {
+    margin-top: 50px;
+    margin-left: 100px;
+  }
+}
