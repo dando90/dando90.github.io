@@ -173,9 +173,9 @@ body{
     svg{
       width: 2em;
       height: 2em;
-      margin: .2em;
       transition: transform .2s;
     }
+    margin: .2em;
     padding-left:1em;
     color: darken($color: $secondary-color, $amount:20);
     &:hover{
