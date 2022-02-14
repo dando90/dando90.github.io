@@ -131,7 +131,7 @@ body{
 .myname{
   width: auto;
   flex: initial;
-  font-size: 2em;
+  font-size: 1.5em;
   font-weight: bold;
   color: darken($color: $secondary-color, $amount:20);
   padding: .1em .5em;
@@ -171,8 +171,8 @@ body{
  }
   .menu-btn{
     svg{
-      width: 2em;
-      height: 2em;
+      width: 1.5em;
+      height: 1.5em;
       transition: transform .2s;
     }
     padding-left:1em;
@@ -231,6 +231,9 @@ body{
   }
   .menu-btn{
     display: none;
+  }
+  .myname{
+    font-size: 2em;
   }
 }
 
