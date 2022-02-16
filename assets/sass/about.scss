@@ -4,7 +4,7 @@
   h2{
     margin-bottom: 20px;
   }
-  border: 1px solid $secondary-color;
+  border: 1px solid darken($color: $secondary-color, $amount:20);
   border-radius: 5px;
   margin: 10px 10px;
   overflow: hidden;

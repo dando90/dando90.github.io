@@ -6,10 +6,10 @@
   align-items: center;
   flex:1;
   div{
-    width: 300px;
+    width: 200px;
     padding: 10px;
     margin: 20px;
-    border: solid 2px black;
+    border: 1px solid darken($color: $secondary-color, $amount:20);
     border-radius: 5px;
   }
 }

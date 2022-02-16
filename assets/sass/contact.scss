@@ -3,10 +3,10 @@
 .form-header {
   text-align: center;
   background-color: transparent;
-  border: 1px solid $secondary-color;
+  border: 1px solid darken($color: $secondary-color, $amount:20);;
   border-radius: 5px;
   width: auto;
-  margin: 40px 0;
+  margin: 10px 10px;
   padding: 50px;
 }
 
@@ -16,12 +16,12 @@
 }
 .contact-form {
   background-color: transparent;
-  border: 1px solid $secondary-color;
+  border: 1px solid darken($color: $secondary-color, $amount:20);;
   border-radius: 5px;
 
   width: auto;
   padding: 50px;
-  margin: 0 0 40px 0;
+  margin: 10px 10px;
 }
 .form-row {
   margin-bottom: 40px;
@@ -107,8 +107,8 @@
     color:grey;
   }
   svg{
-    width: 4em;
-    height: 4em;
+    width: 3em;
+    height: 3em;
     padding:10px;
     margin:20px;
   }
@@ -153,9 +153,20 @@
   .form-row button {
     margin-left: 120px;
   }
+  .social-contact {
+    svg{
+      width: 3.5em;
+      height: 3.5em;
+    }
+  }
 }
 
 /* Desktop Styles */
 @media only screen and (min-width: 961px) {
-  
+  .social-contact {
+    svg{
+      width: 4em;
+      height: 4em;
+    }
+  }
 }

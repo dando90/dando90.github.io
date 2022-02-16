@@ -4,7 +4,7 @@
   h2{
     margin-bottom: 20px;
   }
-  border: 1px solid $secondary-color;
+  border: 1px solid darken($color: $secondary-color, $amount:20);;
   border-radius: 5px;
   margin: 10px 10px;
   overflow: hidden;
@@ -12,6 +12,14 @@
   p{
     overflow: hidden;
     margin-bottom: 10px;
+  }
+  li{
+    list-style-type: none;
+    margin-bottom: 10px;
+    img{
+      width: 30px;
+      margin-right: 20px;
+    }
   }
 }
 
