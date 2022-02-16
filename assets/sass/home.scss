@@ -4,6 +4,7 @@
   display:flex;
   flex-direction: column-reverse;
   align-items: center;
+  height: auto;
   img{
   transition: width .5s;
   width: 250px;
@@ -17,6 +18,7 @@
     border-radius: 20px;
     padding: 20px;
     text-align: center;
+    margin-top: 10px;
   }
 }
 .content-text{

@@ -39,7 +39,7 @@ body{
 }
 .page {
   display:flex;
-  margin-top: 60px;
+  margin-top: 43px;
 }
 .content-align{
   display:flex;
@@ -50,15 +50,29 @@ body{
   flex:1;
   max-width: 660px;
 }
-.foto{
+.sidebar-dx{
+  position:fixed;
+  top: 60px;
+  right: 0px;
   flex: initial;
-  width:200px;
+  padding:30px;
+  background-image: radial-gradient(circle, darken($color: $secondary-color, $amount:20),  rgba(0, 255, 0, 0));
+  height: auto;
   display: none;
+  writing-mode: vertical-rl;
+  text-orientation: upright;
+  text-transform: uppercase;
+  font-weight: bold;
+  color: $primary-color;
+  font-size: 28px;
 }
 .foto-header{
   display:flex;
+  height:200px;
   img{
-    width:200px;
+    width:100%;
+    object-fit: cover;
+    border-radius: 5px;
   }
 }
 .content-text{
@@ -197,7 +211,7 @@ body{
 /* Tablet Styles */
 @media only screen and (min-width: 576px) {
   .page{
-    margin-top: 110px;
+    margin-top: 103px;
   }
   .my-header{
     nav{
@@ -235,11 +249,14 @@ body{
   .myname{
     font-size: 2em;
   }
+  .foto-header {
+    height: 250px;
+  }
 }
 
 /* Desktop Styles */
 @media only screen and (min-width: 961px) {
-  .foto{
+  .sidebar-dx{
     display:block;
   }
   .content-box{
@@ -255,6 +272,10 @@ body{
   }
   .myname{
     margin-left:50px;
+    &:after{
+      text-transform: none;
+      content: " - Web developer";
+    }
   }
   .menu {
     position: fixed;
@@ -302,7 +323,8 @@ body{
   }
   
   .page {
-    margin-top: 50px;
+    margin-top: 49px;
     margin-left: 100px;
+    margin-right: 120px;
   }
 }

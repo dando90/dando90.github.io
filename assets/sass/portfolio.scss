@@ -13,7 +13,10 @@
     border-radius: 5px;
   }
 }
-
+.foto-header img{
+  width: 80%;
+  margin: 0 auto;
+}
   /*Media queries*/
 /* Mobile Styles */
 @media only screen and (max-width: 575px) {
