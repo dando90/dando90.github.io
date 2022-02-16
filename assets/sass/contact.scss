@@ -2,7 +2,6 @@
 
 .form-header {
   text-align: center;
-  background-color: transparent;
   border: 1px solid darken($color: $secondary-color, $amount:20);;
   border-radius: 5px;
   width: auto;
@@ -15,10 +14,8 @@
   margin-bottom: 20px;
 }
 .contact-form {
-  background-color: transparent;
   border: 1px solid darken($color: $secondary-color, $amount:20);;
   border-radius: 5px;
-
   width: auto;
   padding: 50px;
   margin: 10px 10px;
@@ -53,10 +50,8 @@
 .form-row textarea {
   font-family: "Helvetica", "Arial", sans-serif;
   font-size: 14px;
-
   border: 1px solid #D6D9DC;
   border-radius: 5px;
-
   min-height: 200px;
   margin-bottom: 10px;
   padding: 7px;
@@ -64,7 +59,6 @@
 }
 
 .form-row .instructions {
-  color: #999999;
   font-size: 14px;
   margin-bottom: 30px;
 }
@@ -87,11 +81,11 @@
 
 .form-row button:hover {
   background-color: lighten($color: $primary-color, $amount: 20);
-  border: solid 3px darken($color: $secondary-color, $amount:20);
+  border: solid 3px darken($color: $secondary-color, $amount: 20);
 }
 
 .form-row button:active {
-  background-color: #407FC7;
+  background-color: lighten($color: $secondary-color, $amount: 60);
 }
 
 .social-contact {
