@@ -7,10 +7,22 @@
   flex:1;
   div{
     width: 200px;
+    height: 200px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    text-align: center;
     padding: 10px;
     margin: 20px;
     border: 1px solid darken($color: $secondary-color, $amount:20);
     border-radius: 5px;
+    a {
+      color: darken($color: $secondary-color, $amount:20);
+      text-decoration: none;
+      &:hover{
+        background-color:  lighten($color: $primary-color, $amount: 20);
+      }
+    }
   }
 }
 .foto-header img{
