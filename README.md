@@ -4,7 +4,7 @@ Repository contenente il codice del mio sito web
 
 PROGETTI SVILUPPO WEB
 
->>> Counter Javascript
+Counter Javascript
 Counter online funzionante:
 https://dando90.github.io/portfolio/javascript_basics/
 File sorgente del codice:
