@@ -7,7 +7,7 @@ function getButtons() {
     for(let button_value of button_values) {
       let newButton = document.createElement('button');
       newButton.dataset.operation = button_value;
-      newButton.textContent = button_value.toString();
+      newButton.textContent = button_value;
       buttons_array.push(newButton);
     }
     return buttons_array;
