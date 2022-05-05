@@ -1,4 +1,4 @@
-#API Rest Project - Start2Impact
+# API Rest Project - Start2Impact
 ## Table of Contents
 1. [General Info](#general-info)
 2. [Technologies](#technologies)
