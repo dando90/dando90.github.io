@@ -8,4 +8,4 @@ Repository contenente il codice del mio sito web
 #### Counter online funzionante: https://dando90.github.io/portfolio/javascript_basics/
 #### Codice sorgente del progetto: https://github.com/dando90/dando90.github.io/tree/main/portfolio/javascript_basics
 ### PHP API Rest
-#### Codice sorgente del progetto: https://dando90.github.io/portfolio/apirest/
+#### Codice sorgente del progetto: https://github.com/dando90/dando90.github.io/tree/main/portfolio/apirest/
