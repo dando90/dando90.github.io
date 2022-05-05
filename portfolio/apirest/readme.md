@@ -39,7 +39,7 @@ Request body:
 #### READ Requests
 Endpoint: apirest/api/subjects/
 Make a GET request to the this endpoint to get the list of all subjects.
-***
+
 Endpoint: apirest/api/subjects/{id}
 Make a GET request to the this endpoint to get the subject with the the specified id.
 #### UPDATE Requests
@@ -75,7 +75,7 @@ api/courses/?name="{name}"&subjects="{1,2,...,n}"=&places="{number}"
 {name} is part of the name of the course
 {1,2,...,n} are the subject id that must be present in the course
 {number} is the minimum number of places that must be available in the course
-***
+
 Endpoint: apirest/api/courses/{id}
 Make a GET request to the this endpoint to get the course with the the specified id.
 #### UPDATE Requests
