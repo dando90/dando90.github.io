@@ -1,7 +1,0 @@
-<IfModule mod_rewrite.c>
-    RewriteEngine On
-    RewriteCond %{REQUEST_FILENAME} !-f
-    RewriteCond %{REQUEST_FILENAME} !-d
-    RewriteRule ^api/subjects/([0-9]*) controller/subjectController.php?id=$1 [QSA]
-    RewriteRule ^api/courses/([0-9]*) controller/courseController.php?id=$1 [QSA] [L] 
-</IfModule>
