@@ -18,7 +18,7 @@ A list of technologies used within the project:
 
 ## Usage and testing
 ***
-Go to URL http://www.google.it/
+Go to URL https://dando90.github.io/portfolio/bookfinder/dist/
 ```
 1. Type something in the research form
 2. Chose a subject from the suggestion list or click on the search button
