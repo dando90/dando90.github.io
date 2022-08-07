@@ -2,7 +2,7 @@
 ## Table of Contents
 1. [General Info](#general-info)
 2. [Technologies](#technologies)
-3. [Usage and testing](#installation)
+3. [Usage and testing](#usage-and-testing)
 ## General Info
 ***
 This project is a javascript single page application that shows a list of books related to the subject typed by the user.
