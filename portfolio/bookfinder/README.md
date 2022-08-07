@@ -2,8 +2,7 @@
 ## Table of Contents
 1. [General Info](#general-info)
 2. [Technologies](#technologies)
-3. [Preparation for testing](#installation)
-4. [API documentation](#collaboration)
+3. [Usage and testing](#installation)
 ## General Info
 ***
 This project is a javascript single page application that shows a list of books related to the subject typed by the user.
@@ -11,7 +10,7 @@ This project is a javascript single page application that shows a list of books 
 ***
 A list of technologies used within the project:
 * [Html]: creation of the page model
-* [SASS,CSS]: styling
+* [SASS,CSS]: for styling
 * [Javascript]: entire application
 * [Webpack]: application deployment
 * [Babel]: Webpack's loader to make javascript code compatible with old browsers
