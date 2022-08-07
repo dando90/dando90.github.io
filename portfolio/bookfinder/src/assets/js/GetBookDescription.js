@@ -20,7 +20,7 @@ export default async function GetBookDescription (e)
         let closeButton = document.createElement("img");
         closeButton.setAttribute("class", "closeDescription");
         closeButton.addEventListener("click", closeDescription);
-        closeButton.src = "./assets/img/test.svg";
+        closeButton.src = "./assets/img/closeImage.svg";
         descriptionElement.append(closeButton);
         bookContainer.append(descriptionElement);
     }
