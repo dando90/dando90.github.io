@@ -1,6 +1,6 @@
-# dando90.github.io
-
-Repository contenente il codice del mio sito web
+# Repository containing my website's and my projects' source code 
+I'll put all my sorce code in https://github.com/dando90/dando90.github.io
+My project examples have been deployed in my website, at URL https://www.stefanochiabrando.com/portfolio/
 
 ## PROGETTI SVILUPPO WEB
 ***
